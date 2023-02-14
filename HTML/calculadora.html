@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/calculadora.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div id="calculator">
+        <div class="numbers-calculator">
+        </div>
+        <div id="display">
+            <div class="equals">
+                <img src="../Assets/equals.svg" alt="">
+            </div>
+            <p id="result"></p>
+        </div>
+
+        <div id="keyboard">
+
+            <button onclick="clean()">AC</button>
+            <button onclick="insert('+/-')">+/-</button>
+            <button onclick="insert('%')">
+                <img src="../Assets/percent.svg" alt="">
+            </button>
+            <button class="quartiary" onclick="insert('/')">
+                <img src="../Assets/divider.svg" alt="">
+            </button>
+
+            <button class="color-gray" onclick="insert('7')">7</button>
+            <button class="color-gray" onclick="insert('8')">8</button>
+            <button class="color-gray" onclick="insert('9')">9</button>
+            <button class="quartiary" onclick="insert('*')">
+                <img src="../Assets/multiplication.svg" alt="">
+            </button>
+
+            <button class="color-gray" onclick="insert('4')">4</button>
+            <button class="color-gray" onclick="insert('5')">5</button>
+            <button class="color-gray" onclick="insert('6')">6</button>
+            <button class="quartiary" onclick="insert('-')">
+                <img src="../Assets/minus.svg" alt="">
+            </button>
+
+            <button class="color-gray" onclick="insert('1')">1</button>
+            <button class="color-gray" onclick="insert('2')">2</button>
+            <button class="color-gray" onclick="insert('3')">3</button>
+            <button class="quartiary" onclick="insert('+')">
+                <img src="../Assets/plus.svg" alt="">
+            </button>
+        </div>
+
+        <div class="column-final">
+            <button class="color-gray zero" onclick="insert('0')">0</button>
+            <div class="sinais">
+                <button class="color-gray" onclick="insert(',')">,</button>
+                <button class="quartiary" onclick="calcular()">
+                    <img src="../Assets/equal.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function elResult() {
+            return document.getElementById('result');
+        }
+
+        function insert(num) {
+            const numero = elResult().innerHTML
+            elResult().innerHTML = numero + num;
+        }
+
+        function clean() {
+            elResult().innerHTML = "";
+            document.querySelector('.numbers-calculator').innerHTML = "";
+        }
+
+        function calcular() {
+            const result = elResult().innerHTML
+            if (result) { 
+                document.querySelector('.numbers-calculator').innerHTML = result;
+                elResult().innerHTML = String(eval(result.replaceAll(',', '.'))).replaceAll('.', ',');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
