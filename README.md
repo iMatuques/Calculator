@@ -30,5 +30,5 @@ Projeto de uma calculadora com desginer IOS.
 ## 📚 Estudos • Plataformas
 
  - Conceitos básicos de HTML e CSS.
- - DarkMode com Javascript.
+ - Javascript.
  - Projeto disponível na <a href="https://rocketseat.com.br/">Rocketseat.</a>
