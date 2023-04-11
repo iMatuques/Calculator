@@ -27,8 +27,3 @@ Projeto de uma calculadora com desginer IOS.
 
 <br>
 
-## 📚 Estudos • Plataformas
-
- - Conceitos básicos de HTML e CSS.
- - Javascript.
- - Projeto disponível na <a href="https://rocketseat.com.br/">Rocketseat.</a>
