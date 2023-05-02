@@ -16,7 +16,8 @@ Desenvolvi uma calculadora funcional com designer inspirado na versão IOS.
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML
+- CSS
 - JavaScript
 - Git e Github
 
