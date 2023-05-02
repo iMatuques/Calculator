@@ -24,6 +24,9 @@ Projeto de uma calculadora com desginer IOS.
   <img alt="" src="https://cdn.discordapp.com/attachments/930441255140352040/1085249184908713984/calculadora.png" width="80%">
 </p>
 
+🖱 Página publicada
+https://imatuques.github.io/creditcard
+
 
 <br>
 
